@@ -1,0 +1,199 @@
+/* 
+Theme Name: Popper Child Theme
+Theme URI: http://lynda.com/mor10
+Description: Tom Manson's whatever child theme of Morten's awesome Popper theme.
+Author: Tom Manson
+Author URI: http://tricksfresno.com
+Template: popper
+Version: 0.1.0
+*/
+
+@import url("../popper/style.css");
+
+body, .site-content,
+.entry-title, .entry-footer span a,
+.index-entry-meta a, #submit {
+    background-color: #222;
+    color: #FFF;
+}
+
+a:any-link {
+    color: #FFF;
+}
+
+.widget {
+    background-color: #000;
+}
+
+.site-content, .entry-title {
+    background-color: #222;
+}
+
+.entry-meta a:hover, .entry-meta a:focus, 
+.entry-footer a:hover, .entry-footer a:focus, 
+.index-entry-meta a:hover, 
+.index-entry-meta a:focus {
+    border-bottom-color: #FFF;
+}
+
+pre, .continue-reading a, .entry-content 
+.continue-reading a, .reply a:any-link,
+#submit, .comment-navigation a, 
+.posts-navigation a, .post-navigation a, 
+.paging-navigation a {
+    background-color: #111;
+}
+
+.continue-reading a:hover, 
+.continue-reading a:focus, 
+.entry-content .continue-reading a:hover, 
+.entry-content .continue-reading a:focus, 
+.reply a:hover, .reply a:focus, 
+#submit:hover {
+    border-color: #FFF;
+    background-color: #000;
+}
+
+.entry-meta, .sticky::before {
+    background-color: #555;
+}
+
+.site-title {
+    font-weight: 300;
+}
+
+.site-description {
+    font-style: italic;
+}
+
+#secondary, .sidebar-right #secondary, .sidebar-left #secondary {
+    background-color: #444;
+}
+
+.comment-navigation a:hover, 
+.comment-navigation a:focus, 
+.posts-navigation a:hover, 
+.posts-navigation a:focus, 
+.post-navigation a:hover, 
+.post-navigation a:focus, 
+.paging-navigation a:hover, 
+.paging-navigation a:focus {
+    border-color: #FFF;
+    background-color: #000;
+}
+
+@media screen and (min-width: 30em) {
+    .entry-meta {
+        margin: 0 -1.894736842105263em;
+    }
+} 
+
+.sticky::before {   
+    display: block;
+    padding: .2em 1em;    
+    text-align: right;
+    font-size: 80%;
+    font-family: 'Fira Sans', sans-serif;
+    content: "Sticky Post";
+}
+
+.posted-on {
+    display: inline-block;
+}
+
+.cat-links {
+    display: block;
+}
+
+.index-entry-meta .cat-links {
+    display: inline;
+}
+
+@media screen and (min-width: 30em) {
+    .index-entry-meta .posted-on::after {
+        content: "|";
+        padding: 0 1em;
+    }
+}
+
+/* Footer Menu */
+.footer-navigation {
+    margin: -2em auto 4em;
+}
+
+.footer-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-navigation a {
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
+/* Use outline instead of border */
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+    outline: 1px solid white;
+}
+
+/* Footer Widgets */
+#tertiary {
+    display: flex;
+    justify-content: center;
+    margin: -3em 0 4em;
+}
+
+#tertiary aside {
+    background-color: #444;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+.rssSummary,
+.widget_popper_recent_comments .excerpt {
+    font-family: europa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.widget ul,
+.widget ol,
+.widget_calendar,
+.site-firstletter,
+.site-title,
+.main-navigation,
+.comment-navigation,
+.posts-navigation,
+.post-navigation,
+.paging-navigation,
+.continue-reading a,
+.entry-content .continue-reading a,
+.entry-meta,
+.entry-footer,
+.index-entry-meta,
+.comment-meta,
+.reply a,
+.comment-form,
+.wp-caption,
+.gallery-caption,
+.site-footer {
+    font-family: adobe-caslon-pro, serif;
+    font-style: normal;
+    font-weight: 400;
+}
